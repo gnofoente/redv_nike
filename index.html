@@ -38,13 +38,32 @@
 
     <main>
       <div class="container">
-        <div class="filter-options">
-          <p>Chuteiras HyperVenom:</p>
+        <button class="button button--filter">Filtrar</button>
 
-          <label for="CanoAlto"><input type="checkbox" id="CanoAlto" value="cano-alto">Cano alto</label>
-          <label for="CanoBaixo"><input type="checkbox" id="CanoBaixo" value="cano-alto">Cano baixo</label>
-          <label for="FutCampo"><input type="checkbox" id="FutCampo" value="cano-alto">Futebol campo</label>
-          <label for="FutSoc"><input type="checkbox" id="FutSoc" value="cano-alto">Futebol Society</label>
+        <div class="filter-options">
+          <p class="filter-options__title">Chuteiras HyperVenom:</p>
+
+          <i class="fa fa-close filter-options__close button--filter" aria hidden="true"></i>
+
+          <label class="filter-options__label" for="CanoAlto">
+            Cano alto
+            <input type="checkbox" id="CanoAlto" value="cano-alto">
+          </label>
+
+          <label class="filter-options__label" for="CanoBaixo">
+            Cano baixo
+            <input type="checkbox" id="CanoBaixo" value="cano-alto">
+          </label>
+
+          <label class="filter-options__label" for="FutCampo">
+            Futebol campo
+            <input type="checkbox" id="FutCampo" value="cano-alto">
+          </label>
+
+          <label class="filter-options__label" for="FutSoc">
+            Futebol Society
+            <input type="checkbox" id="FutSoc" value="cano-alto">
+          </label>
 
           <button class="button">Todos os produtos</button>
         </div>
