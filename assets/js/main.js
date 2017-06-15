@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
     val.addEventListener('click', function() {
       toggleClass(filter, 'filter-options--visible');
     });
-  })
+  });
 
   function toggleClass(element, elementClass) {
     element.classList.toggle(elementClass);
   }
-  
+
 });

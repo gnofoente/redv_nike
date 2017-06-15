@@ -255,3 +255,48 @@ body {
 .filter-options--visible {
   display: block;
 }
+
+@media screen and (min-width: 930px) {
+  .button--filter {
+    display: none;
+  }
+
+  .filter-options {
+    background: none;
+    box-shadow: none;
+    border-bottom: 1px solid #cccccc;
+    display: block;
+    margin-top: 20px;
+    padding: 0;
+    position: relative;
+    text-align: justify;
+    z-index: 0;
+  }
+
+  .filter-options__all-products,
+  .filter-options__wrapper {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .filter-options::after {
+    content: " ";
+    display: inline-block;
+    width: 100%;
+  }
+
+  .filter-options__label,
+  .filter-options__title {
+    display: inline-block;
+    padding-bottom: 0;
+    text-transform: initial;
+  }
+
+  .filter-options__label input[type="checkbox"] {
+    float: left;
+    position: relative;
+    bottom: 4px;
+    margin: 0 5px 0 15px;
+  }
+
+}
