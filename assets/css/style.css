@@ -58,19 +58,21 @@ body {
 
 .menu__items {
   display: none;
-  opacity: 0;
 }
 
-.menu__items--visible {
-  transition: .3s;
-  display: block;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  line-height: 33px;
-  background: black;
-  padding: 0;
+@media screen and (max-width: 550px) {
+  .menu__items--visible {
+    transition: .3s;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    line-height: 33px;
+    background: black;
+    padding: 0;
+  }
 }
+
 
 .menu__items li {
   text-align: center;
