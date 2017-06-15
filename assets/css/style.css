@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
 
 body, h1, h2, p, span {
   margin: 0;
@@ -24,6 +27,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+}
+
 .justify-menu {
   text-align: justify;
   line-height: 0;
@@ -39,6 +48,10 @@ body {
   padding: 10px;
 }
 
+.menu {
+  transition: .2s;
+}
+
 .menu__icon {
   font-size: 2rem;
 }
@@ -47,7 +60,8 @@ body {
   display: none;
 }
 
-.menu__icon:hover + .menu__items {
+.menu__items--visible {
+  transition: .3s;
   display: block;
   position: absolute;
   width: 100%;
@@ -63,10 +77,11 @@ body {
 }
 
 .menu__items li a {
+  font-weight: 700;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 550px) {
@@ -85,7 +100,7 @@ body {
     display: inline-block;
     line-height: initial;
     vertical-align: middle;
-    margin: 0 7px;
+    margin: 0 12px;
   }
 
   .menu__items li a {
@@ -109,9 +124,27 @@ body {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .menu {
+    margin-left: 10px;
+  }
+}
+
 @media screen and (min-width: 720px) {
   .menu {
-    width: 89%;
+    margin-left: 27px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .menu {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu {
+    width: 87%;
   }
 }
 
