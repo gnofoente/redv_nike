@@ -58,6 +58,7 @@ body {
 
 .menu__items {
   display: none;
+  opacity: 0;
 }
 
 .menu__items--visible {
