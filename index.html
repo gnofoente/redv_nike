@@ -4,27 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>RedVentures Challenge - Gustavo Nofoente</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container justify-menu">
         <h1 class="header__logo">
           <img src="assets/img/nike-logo.png" alt="Nike">
         </h1>
 
         <nav class="menu">
-          <ul>
+          <i class="fa fa-bars menu__icon" aria hidden="true"></i>
+
+          <ul class="menu__items">
             <li><a href="#">Masculino</a></li>
             <li><a href="#">Feminino</a></li>
             <li><a href="#">Menino</a></li>
             <li><a href="#">Menina</a></li>
           </ul>
+
+          <a class="cart" href="#">
+            <img src="assets/img/cart.png" alt="Cart">
+          </a>
         </nav>
 
-        <a href="#">
-          <img src="assets/img/cart.png" alt="Cart">
-        </a>
       </div>
     </header>
 
@@ -45,84 +50,89 @@
           <button class="button">Todos os produtos</button>
         </div>
 
-        <ul class="showcase">
+        <section>
           <h2>Mais vendidos</h2>
-          <li class="product">
-            <img src="#" alt="">
 
-            <p>Personalize</p>
+          <ul class="showcase">
+            <li class="product">
+              <img src="#" alt="">
 
-            <p class="product__name">Chuteira Nike HyperVenomX Proximo II Society</p>
+              <p>Personalize</p>
 
-            <span class="product__attribute">Cano Alto</span>
+              <p class="product__name">Chuteira Nike HyperVenomX Proximo II Society</p>
 
-            <p class="product__price">
-              R$ 499,00
+              <span class="product__attribute">Cano Alto</span>
 
-              <span class="product__interests">ou 10x 49,90 sem juros</span>
-            </p>
+              <p class="product__price">
+                R$ 499,00
 
-            <button class="button">Comprar</button>
-          </li>
+                <span class="product__interests">ou 10x 49,90 sem juros</span>
+              </p>
 
-          <li class="product">
-            <img src="#" alt="">
+              <button class="button">Comprar</button>
+            </li>
 
-            <p>Personalize</p>
+            <li class="product">
+              <img src="#" alt="">
 
-            <p class="product__name">Chuteira Nike HyperVenomX Proximo II Society</p>
+              <p>Personalize</p>
 
-            <span class="product__attribute">Cano Alto</span>
+              <p class="product__name">Chuteira Nike HyperVenomX Proximo II Society</p>
 
-            <p class="product__price">
-              R$ 499,00
+              <span class="product__attribute">Cano Alto</span>
 
-              <span class="product__interests">ou 10x 49,90 sem juros</span>
-            </p>
+              <p class="product__price">
+                R$ 499,00
 
-            <button class="button">Comprar</button>
-          </li>
+                <span class="product__interests">ou 10x 49,90 sem juros</span>
+              </p>
 
-          <li class="product">
-            <img src="#" alt="">
+              <button class="button">Comprar</button>
+            </li>
 
-            <p>Personalize</p>
+            <li class="product">
+              <img src="#" alt="">
 
-            <p class="product__name">Chuteira Nike HyperVenomX Proximo II Society</p>
+              <p>Personalize</p>
 
-            <span class="product__attribute">Cano Alto</span>
+              <p class="product__name">Chuteira Nike HyperVenomX Proximo II Society</p>
 
-            <p class="product__price">
-              R$ 499,00
+              <span class="product__attribute">Cano Alto</span>
 
-              <span class="product__interests">ou 10x 49,90 sem juros</span>
-            </p>
+              <p class="product__price">
+                R$ 499,00
 
-            <button class="button">Comprar</button>
-          </li>
+                <span class="product__interests">ou 10x 49,90 sem juros</span>
+              </p>
 
-          <li class="product">
-            <img src="#" alt="">
+              <button class="button">Comprar</button>
+            </li>
 
-            <p>Personalize</p>
+            <li class="product">
+              <img src="#" alt="">
 
-            <p class="product__name">Chuteira Nike HyperVenomX Proximo II Society</p>
+              <p>Personalize</p>
 
-            <span class="product__attribute">Cano Alto</span>
+              <p class="product__name">Chuteira Nike HyperVenomX Proximo II Society</p>
 
-            <p class="product__price">
-              R$ 499,00
+              <span class="product__attribute">Cano Alto</span>
 
-              <span class="product__interests">ou 10x 49,90 sem juros</span>
-            </p>
+              <p class="product__price">
+                R$ 499,00
 
-            <button class="button">Comprar</button>
-          </li>
-        </ul>
+                <span class="product__interests">ou 10x 49,90 sem juros</span>
+              </p>
 
-        <ul class="showcase">
+              <button class="button">Comprar</button>
+            </li>
+          </ul>
+        </section>
+
+        <section>
           <h2>Lançamentos</h2>
 
+          <ul class="showcase">
+
           <li class="product">
             <img src="#" alt="">
 
@@ -195,6 +205,7 @@
             <button class="button">Comprar</button>
           </li>
         </ul>
+        </section>
       </div>
     </main>
 
