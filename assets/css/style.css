@@ -476,3 +476,33 @@ input[type="checkbox"]:checked + .filter-options__label::after {
   color: white;
   fill: white;
 }
+
+.before-footer {
+  background: url(../img/justdoit.png) no-repeat fixed;
+  height: 500px;
+  margin-top: 70px;
+  background-position: 50% -100px;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.before-footer p {
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .before-footer p {
+    font-size: 3.8rem;
+  }
+}
+
+.footer {
+  color: #999999;
+  font-size: 0.8rem;
+  padding: 25px;
+  text-align: center;
+}
