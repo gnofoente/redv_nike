@@ -438,8 +438,7 @@ input[type="checkbox"]:checked + .filter-options__label::after {
 
 @media screen and (min-width: 1024px) {
   .product {
-    outline: 1px solid transparent;
-    outline-offset: -5px;
+    border: 1px solid transparent;
     margin-left: 1%;
     margin-right: 1%;
     transition: .3s ease;
@@ -447,9 +446,8 @@ input[type="checkbox"]:checked + .filter-options__label::after {
   }
 
   .product:hover {
+    border-color: grey;
     cursor: pointer;
-    outline: 1px solid grey;
-    outline-offset: 0px;
   }
 
   .button--buy {
@@ -460,5 +458,21 @@ input[type="checkbox"]:checked + .filter-options__label::after {
   .product:hover > .button--buy {
     opacity: 1;
   }
+}
 
+.flickity-prev-next-button {
+  background: #333;
+  border-radius: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+.flickity-prev-next-button:hover {
+  background: #F90;
+}
+
+.flickity-prev-next-button .arrow,
+.flickity-prev-next-button.no-svg {
+  color: white;
+  fill: white;
 }

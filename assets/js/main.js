@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var installmentsValue = document.createElement('span');
       var buyButton = document.createElement('button');
 
-      productElement.classList.add('product');
+      productElement.classList.add('product', 'carousel-cell');
 
       image.src = product.image;
       image.classList.add('product__image');
@@ -100,6 +100,18 @@ document.addEventListener('DOMContentLoaded', function() {
       releases = products['releases'];
       renderProducts(bestsellers, showcase[0]);
       renderProducts(releases, showcase[1]);
+
+      var flkty = new Flickity(showcase[0], {
+        contain: true,
+        groupCells: 2,
+        cellAlign: 'left'
+      });
+
+      var flkty2 = new Flickity(showcase[1], {
+        contain: true,
+        groupCells: 2,
+        cellAlign: 'left'
+      });
     });
   }());
 
