@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
       installmentsQty.appendChild(document.createTextNode(
         "ou " + product.installments.number + "X de "
       ));
-      product.installments.value = product.installments.value.formatMoney(2, 'R$', '.', ',');
+      product.installments.value = product.installments.value.formatMoney(2, '', '.', ',');
       installmentsValue.appendChild(document.createTextNode(
         product.installments.value + " sem juros"
       ));
