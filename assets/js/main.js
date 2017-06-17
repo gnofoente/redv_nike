@@ -6,6 +6,18 @@ document.addEventListener('DOMContentLoaded', function() {
   var filterButton = document.querySelectorAll('.button--filter');
   var showcase = document.querySelectorAll('.showcase');
 
+  Number.prototype.formatMoney = function(places, symbol, thousand, decimal) {
+	places = !isNaN(places = Math.abs(places)) ? places : 2;
+	symbol = symbol !== undefined ? symbol : "$";
+	thousand = thousand || ",";
+	decimal = decimal || ".";
+	var number = this,
+	    negative = number < 0 ? "-" : "",
+	    i = parseInt(number = Math.abs(+number || 0).toFixed(places), 10) + "",
+	    j = (j = i.length) > 3 ? j % 3 : 0;
+	return symbol + negative + (j ? i.substr(0, j) + thousand : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousand) + (places ? decimal + Math.abs(number - i).toFixed(places).slice(2) : "");
+  };
+
   menuIcon.addEventListener('click', function() {
     toggleClass(menuItems, 'menu__items--visible');
   });
@@ -51,7 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
       attribute.textContent = product['high-top'] ? "Cano Alto" : "Cano Baixo";
 
       price.classList.add('product__price');
-      price.appendChild(document.createTextNode("R$" + product.price));
+      product.price = product.price.formatMoney(2, 'R$', '.', ',');
+      price.appendChild(document.createTextNode(product.price));
 
       installments.classList.add('product__installments');
       installmentsQty.classList.add('product__installments-qty');
@@ -60,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
       installmentsQty.appendChild(document.createTextNode(
         "ou " + product.installments.number + "X de "
       ));
+      product.installments.value = product.installments.value.formatMoney(2, 'R$', '.', ',');
       installmentsValue.appendChild(document.createTextNode(
         product.installments.value + " sem juros"
       ));
@@ -79,13 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
       productElement.appendChild(buyButton);
 
       frag.appendChild(productElement);
-
-      console.log(product);
-      console.log(productElement);
     });
     parentNode.appendChild(frag);
-    console.log(frag);
-
   }
 
   (function getProducts(){
