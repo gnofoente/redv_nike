@@ -104,13 +104,15 @@ document.addEventListener('DOMContentLoaded', function() {
       var flkty = new Flickity(showcase[0], {
         contain: true,
         groupCells: 2,
-        cellAlign: 'left'
+        cellAlign: 'left',
+        setGallerySize: false
       });
 
       var flkty2 = new Flickity(showcase[1], {
         contain: true,
         groupCells: 2,
-        cellAlign: 'left'
+        cellAlign: 'left',
+        setGallerySize: false
       });
     });
   }());
