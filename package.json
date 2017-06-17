@@ -1,0 +1,26 @@
+{
+  "name": "redv",
+  "version": "1.0.0",
+  "description": "RedVentures challenge",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnofoente/redv_nike.git"
+  },
+  "author": "Gustavo Nofoente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnofoente/redv_nike/issues"
+  },
+  "homepage": "https://github.com/gnofoente/redv_nike#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
