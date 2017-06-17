@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var filterButton = document.querySelectorAll('.button--filter');
   var showcase = document.querySelectorAll('.showcase');
 
+  /* Currency formatting by WJ Rowcroft, in the following article:
+     http://www.josscrowcroft.com/2011/code/format-unformat-money-currency-javascript/
+  */
   Number.prototype.formatMoney = function(places, symbol, thousand, decimal) {
 	places = !isNaN(places = Math.abs(places)) ? places : 2;
 	symbol = symbol !== undefined ? symbol : "$";
