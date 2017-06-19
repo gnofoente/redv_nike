@@ -484,7 +484,7 @@ input[type="checkbox"]:checked + .filter-options__label::after {
 }
 
 .before-footer {
-  background: url(../img/justdoit.png) no-repeat fixed;
+  background: url(../img/justdoit.jpg) no-repeat fixed;
   height: 500px;
   margin-top: 70px;
   background-position: 50% -100px;
