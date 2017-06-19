@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
       products = JSON.parse(data);
       bestsellers = products['best-sellers'];
       releases = products['releases'];
-      
+
       renderProducts(bestsellers, showcase[0]);
       renderProducts(releases, showcase[1]);
 
@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
         groupCells: 2,
         cellAlign: 'left',
         setGallerySize: false,
-        pageDots: false
+        pageDots: true,
+        prevNextButtons: false
       });
 
       var flkty2 = new Flickity(showcase[1], {
@@ -47,7 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
         groupCells: 2,
         cellAlign: 'left',
         setGallerySize: false,
-        pageDots: false
+        pageDots: true,
+        prevNextButtons: false
       });
     });
 

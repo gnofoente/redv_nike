@@ -88,10 +88,10 @@ body {
   }
 }
 
-
 .menu__items li {
   text-align: center;
   list-style: none;
+  position: relative;
 }
 
 .menu__items li a {
@@ -123,6 +123,20 @@ body {
 
   .menu__items li a {
     color: black;
+  }
+
+  .menu__items li a::after {
+    background: black;
+    content: " ";
+    display: block;
+    height: 2px;
+    position: absolute;
+    width: 0px;
+    transition: .3s ease;
+  }
+
+  .menu__items li:hover a::after {
+    width: 100%;
   }
 
   .justify-menu {
