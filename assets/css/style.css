@@ -442,6 +442,18 @@ input[type="checkbox"]:checked + .filter-options__label::after {
   margin-bottom: 22px;
 }
 
+@media (min-width: 460px) and (max-width: 699px) {
+  .button--buy {
+    width: 180px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .button--buy {
+    width: 180px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .product {
     border: 1px solid transparent;
