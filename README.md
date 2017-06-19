@@ -1,7 +1,7 @@
 # Red Ventures Front-End Test
 
 ## Como executar o projeto
-1. Baixá-lo ou cloná-lo via github;
+1. Baixar ou clonar o repositório;
 2. Abrir index.html.
 
 ## Tecnologias utilizadas
