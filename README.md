@@ -17,4 +17,4 @@ Para o layout responsivo, me utilizei dos conceitos de _mobile first_ para desen
 *\* Estas tecnologias foram utilizadas apenas para auxiliar o processo de desenvolvimento e não são dependências para rodar o projeto.*
 
 ## Observações
-Os _assets_ do projeto estao minificados na pasta **public**. Para visualizá-los corretamente, acessá-los do diretório **assests**.
+Os _assets_ do projeto estao minificados na pasta **public**. Para visualizá-los corretamente, acesse-os do diretório **assests**.
